@@ -1,14 +1,18 @@
-**Informativa sulla Privacy (Privacy Policy) di “Vocalize”**
+# Informativa sulla Privacy (Privacy Policy) di “Vocalize”
 Ultimo aggiornamento: 13/09/2025
-Grazie per aver scelto di utilizzare la mia app “Vocalize”. 
+
+## Grazie per aver scelto di utilizzare la mia app “Vocalize”. 
+
 La tua privacy è molto importante per noi. Questa informativa sulla privacy spiega quali dati raccogliamo, come li usiamo e quali sono i tuoi diritti in relazione ad essi.
 Utilizzando la nostra applicazione, accetti la raccolta e l'uso delle informazioni in conformità con questa policy.
-1. Titolare del Trattamento dei Dati
-Il titolare del trattamento dei dati personali raccolti tramite questa applicazione è: Kastriot Lleshi
- Indirizzo Email di Contatto: klleshi99@gmail.com
 
-3. Tipi di Dati Raccolti
+## 1. Titolare del Trattamento dei Dati
+### Il titolare del trattamento dei dati personali raccolti tramite questa applicazione è: Kastriot Lleshi
+### Indirizzo Email di Contatto: klleshi99@gmail.com
+
+## 3. Tipi di Dati Raccolti
 Per fornire e migliorare il nostro servizio, raccogliamo diversi tipi di informazioni.
+
 Dati forniti dall'utente:
 Testo per la sintesi vocale: Il testo che inserisci, incolli o importi da file (PDF) e pagine web viene inviato ai nostri fornitori di servizi per la conversione in audio. Non conserviamo questo testo dopo la sintesi.
 Informazioni dell'account (per utenti registrati): Se scegli di collegare il tuo account, raccogliamo le informazioni di base del tuo profilo Google, come nome, indirizzo email e un identificatore univoco.
@@ -17,7 +21,7 @@ Dati raccolti automaticamente:
 Dati di Utilizzo: Raccogliamo informazioni anonime su come interagisci con l'app, come le funzionalità che usi e i crash, al fine di migliorare il servizio.
 ID Utente Unico: L'app assegna un identificatore univoco (anonimo o collegato al tuo account) per gestire il tuo piano, i crediti e le funzionalità.
 
-5. Finalità del Trattamento dei Dati
+## 5. Finalità del Trattamento dei Dati
 Utilizziamo i dati raccolti per le seguenti finalità:
 Per fornire e mantenere il nostro servizio: Convertire il testo in audio, salvare i tuoi file e progetti di audiolibri.
 Per gestire il tuo account: Creare e gestire il tuo account (anonimo o registrato) e sincronizzare i tuoi dati.
