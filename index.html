@@ -1,55 +1,205 @@
 <!DOCTYPE html>
-<html>
-
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Klleshi.GitHub.io : ">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title> klleshi.github.io </title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/klleshi">View on GitHub</a>
-
-          <h1 id="project_title">klleshi.github.io</h1>
-          <h2 id="project_tagline"></h2>
-
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
- <h1>
-  <a id="my-personal-site" class="anchor" href="#my-personal-site" aria-hidden="true"><span class="octicon octicon-link"></span></a>My personal page
- </h1>
-
-
-<h3>
-  <p> <a href="https://play.google.com/store/apps/details?id=io.github.klleshi.vocalize">App for Android: Vocalize</a></p>
-  <p> <a href="https://apps.apple.com/app/id6757393059">App for IOS: Vocalize</a></p>
- <p> <a href="https://play.google.com/store/apps/details?id=io.github.klleshi.infoterremoti">App for Android: Terremoti</a></p>
- <p> <a href="http://klleshi.github.io/project_web_design/">Project: Web Design</a></p>
- <!-- <p> <a href="http://test01.danielvedovato.it/">Project: Software Engineering</a></p> -->
- <!-- <p> <a href="https://projects.invisionapp.com/share/W32ZIPT8X#/screens">Project: Human-Computer Interaction </a></p> -->
-<h3>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Portfolio personale di Klleshi - Sviluppatore Mobile e Web">
     
+    <title>Portfolio | Klleshi</title>
 
-  </body>
+    <style>
+        /* --- STILI BASE E VARIABILI --- */
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+            --card-bg: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* --- HEADER --- */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #bdc3c7;
+        }
+
+        /* --- CONTENITORE PRINCIPALE --- */
+        .container {
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+        }
+
+        /* --- GRIGLIA PROGETTI (Flexbox) --- */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        /* --- CARDS DEI PROGETTI --- */
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 4px solid var(--accent-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card p {
+            color: #666;
+            margin-bottom: 1.5rem;
+            flex-grow: 1; /* Spinge i bottoni in basso */
+        }
+
+        /* --- BOTTONI --- */
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: background-color 0.2s;
+            text-align: center;
+            flex: 1; /* I bottoni prendono la stessa larghezza */
+        }
+
+        .btn-android { background-color: #3DDC84; color: #000; }
+        .btn-android:hover { background-color: #35c073; }
+
+        .btn-ios { background-color: #000000; color: #fff; }
+        .btn-ios:hover { background-color: #333333; }
+
+        .btn-web { background-color: var(--accent-color); color: #fff; }
+        .btn-web:hover { background-color: #2980b9; }
+
+        .btn-disabled { background-color: #e0e0e0; color: #7f8c8d; cursor: not-allowed; }
+
+        /* --- FOOTER --- */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Klleshi</h1>
+        <p>Software & App Developer</p>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title">I Miei Progetti</h2>
+        
+        <div class="projects-grid">
+            
+            <article class="card">
+                <h3>🛠️ Auto Workshop Pro</h3>
+                <p>Gestionale completo, veloce e offline per autofficine. Creazione preventivi, storico veicoli, anagrafiche e statistiche avanzate.</p>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-disabled">Rilascio a breve</a> 
+                </div>
+            </article>
+
+            <article class="card">
+                <h3>🗣️ Vocalize</h3>
+                <p>Applicazione mobile per l'allenamento e la gestione della voce. Disponibile per entrambe le piattaforme principali.</p>
+                <div class="btn-group">
+                    <a href="https://play.google.com/store/apps/details?id=io.github.klleshi.vocalize" class="btn btn-android" target="_blank">Android</a>
+                    <a href="https://apps.apple.com/app/id6757393059" class="btn btn-ios" target="_blank">iOS</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <h3>🌍 Info Terremoti</h3>
+                <p>App Android per il monitoraggio in tempo reale degli eventi sismici, con notifiche e dettagli accurati.</p>
+                <div class="btn-group">
+                    <a href="https://play.google.com/store/apps/details?id=io.github.klleshi.infoterremoti" class="btn btn-android" target="_blank">Android</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <h3>💻 Web Design</h3>
+                <p>Progetto accademico o personale dedicato all'esplorazione del design moderno e dello sviluppo web frontend.</p>
+                <div class="btn-group">
+                    <a href="http://klleshi.github.io/project_web_design/" class="btn btn-web" target="_blank">Visita il sito</a>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Klleshi. Ospitato con orgoglio su <a href="https://pages.github.com" target="_blank">GitHub Pages</a>.</p>
+    </footer>
+
+</body>
 </html>
